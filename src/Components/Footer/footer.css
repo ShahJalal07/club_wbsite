@@ -1,0 +1,30 @@
+.address{
+    @apply flex justify-between  mt-[50px]
+}
+.address .logo{
+    @apply w-[100px] h-[100px] 
+}
+.address .logo img{
+    @apply w-full h-full rounded-full
+}
+.location {
+    @apply flex
+}
+.location svg{
+    @apply text-font30 text-third-blue
+}
+.location p{
+    @apply text-primary-white text-font20 
+}
+.conact{
+    @apply mt-[30px]
+}
+.address .social_media{
+    @apply flex
+}
+.address .social_media svg{
+    @apply text-primary-white text-font40 mx-[10px] duration-[0.3s] ease-in-out transition-all
+}
+.address .social_media svg:hover{
+    @apply text-third-blue
+}

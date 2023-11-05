@@ -1,0 +1,406 @@
+.container {
+  @apply w-[1920px] mx-auto;
+}
+body {
+  @apply bg-[#202121] pb-[50px];
+}
+.section_gap {
+  @apply py-[50px] mt-[50px];
+}
+.title {
+  @apply text-center mt-[50px];
+}
+.title h1 {
+  @apply font-bold text-font40 text-frouth-red font-primary_poppins;
+}
+.title p {
+  @apply w-[800px] mx-auto mt-[10px] text-font20 font-medium capitalize font-secondary_roboto;
+}
+/* navbar start */
+.navbar {
+  @apply py-[10px] bg-[#160959] shadow-[0px_0px_5px_1px_rgba(173,167,167,0.76)] sticky top-0 left-0 z-[9];
+}
+.navbar_content {
+  @apply relative flex items-center justify-between;
+}
+.navbar_content .logo {
+  @apply w-[70px] h-[70px] rounded-full;
+}
+.navbar_content .logo img {
+  @apply w-[100%] h-[100%] rounded-full shadow-[0px_0px_5px_1px_rgba(173,167,167,0.76)];
+}
+.navbar nav ul {
+  @apply flex uppercase;
+}
+.navbar nav ul li {
+  @apply px-[10px] relative;
+}
+.navbar nav ul li a {
+  @apply font-medium text-font15 text-frouth-red font-secondary_roboto;
+}
+.navbar .social {
+  @apply flex;
+}
+.navbar .social svg {
+  @apply text-font30 mx-[10px];
+}
+.navbar .social .facebook {
+  @apply relative text-blue-600 cursor-pointer;
+}
+.navbar .social .gmail {
+  @apply text-[#e04d3b];
+}
+.active::before {
+  z-index: 9;
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 3px;
+  background-color: #ff0000;
+  border-radius: 4px;
+}
+.menu_icon {
+  @apply text-font30 text-primary-white cursor-pointer absolute top-[10px] right-[0px] z-[9] hidden;
+}
+.menu_icon .close {
+  @apply text-frouth-red;
+}
+
+/* navbar end */
+
+/* lg device */
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .stitle h2 {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  .navbar_content .logo {
+    height: 60px;
+    width: 60px;
+  }
+  .section_gap {
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .title {
+    margin-top: 20px;
+  }
+  .title h1 {
+    font-size: 30px;
+  }
+  .aboutus_content p {
+    width: 650px;
+    font-weight: 500;
+  }
+  .title p {
+    width: 650px;
+  }
+  .sucess_title h1 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .allWork {
+    margin-bottom: 50px;
+  }
+  .smember {
+    margin-top: 120px;
+    width: 30.5%;
+  }
+  .sMan {
+    height: 180px;
+    width: 180px;
+  }
+  .stitle h2 {
+    font-size: 22px;
+  }
+  .stitle h3 {
+    font-size: 18px;
+  }
+  .sSocial svg {
+    font-size: 25px;
+  }
+  .comitte_member {
+    margin-bottom: 50px;
+  }
+  .address .logo {
+    height: 80px;
+    width: 80px;
+  }
+  .location svg {
+    font-size: 25px;
+  }
+  .location p {
+    font-size: 15px;
+  }
+  .conact {
+    margin-top: 20px;
+  }
+  .address .social_media svg {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .navbar_content .logo {
+    height: 60px;
+    width: 60px;
+  }
+  .title {
+    margin-top: 20px;
+  }
+  .title h1 {
+    font-size: 30px;
+  }
+  .title p {
+    width: 650px;
+    font-size: 20px;
+  }
+  .aboutus_content p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 650px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .section_gap {
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .sucess_box {
+    width: 30%;
+  }
+  .sucess_title h1 {
+    font-size: 25px;
+  }
+  .allWork {
+    margin-bottom: 50px;
+  }
+  .smember {
+    margin-top: 130px;
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+  .sMan {
+    height: 180px;
+    width: 180px;
+  }
+  .stitle h2 {
+    font-size: 25px;
+  }
+  .sSocial svg {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+  }
+  .address .logo {
+    height: 75px;
+    width: 75px;
+  }
+  .location svg {
+    font-size: 25px;
+  }
+  .location p {
+    font-size: 15px;
+  }
+  .conact {
+    margin-top: 15px;
+  }
+  .address .social_media svg {
+    font-size: 25px;
+  }
+}
+@media (min-width: 577px) and (max-width: 767.99px) {
+  .menu_icon {
+    display: block;
+  }
+  .navbar_content ul {
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    background: #21529a;
+    height: 100vh;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    transition: right 0.5s linear;
+  }
+  .navbar_content ul li {
+    /* margin: 10px 0; */
+    font-size: 30px;
+  }
+  .navbar_content .social {
+    display: none;
+  }
+  .navbar_content .navopen {
+    position: fixed;
+    top: 80px;
+    right: 0%;
+    background: #21529a;
+    height: 100vh;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    transition: right 0.5s linear;
+  }
+
+  .navbar_content .logo {
+    height: 60px;
+    width: 60px;
+  }
+  .title h1 {
+    font-size: 30px;
+  }
+  .section_gap {
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .title p {
+    margin-top: 5px;
+    width: 500px;
+    font-size: 18px;
+  }
+  .aboutus_content p {
+    width: 600px;
+    font-size: 15px;
+  }
+  .section_gap {
+    margin-top: 20px;
+  }
+  .sucess_box {
+    width: 49%;
+  }
+  .sucess_title h1 {
+    font-size: 25px;
+  }
+  .smember {
+    width: 48%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .stitle h2 {
+    font-size: 25px;
+  }
+  .stitle h3 {
+    font-size: 18px;
+  }
+  .address .logo {
+    height: 80px;
+    width: 80px;
+  }
+  .location p {
+    font-size: 15px;
+  }
+  .conact {
+    margin-top: 10px;
+  }
+  .address .social_media svg {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 576.99px) {
+  .menu_icon {
+    top: 5px;
+    display: block;
+  }
+  .navbar_content ul {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    background: #21529a;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    transition: right 0.5s linear;
+  }
+  .navbar_content ul li {
+    /* margin: 10px 0; */
+    font-size: 30px;
+  }
+  .navbar_content .social {
+    display: none;
+  }
+  .navbar_content .navopen {
+    position: fixed;
+    top: 70px;
+    right: 0%;
+    background: #21529a;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    transition: right 0.5s linear;
+  }
+
+  .navbar_content .logo {
+    height: 50px;
+    width: 50px;
+  }
+  .title h1 {
+    font-size: 30px;
+  }
+  .section_gap {
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .title p {
+    margin-top: 5px;
+    width: 300px;
+    font-size: 18px;
+  }
+  .aboutus_content p {
+    width: 300px;
+
+    font-size: 15px;
+  }
+  .section_gap {
+    margin-top: 20px;
+  }
+  .sucess_box {
+    width: 100%;
+  }
+  .sucess_title h1 {
+    font-size: 25px;
+  }
+  .smember {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .stitle h2 {
+    font-size: 25px;
+  }
+  .stitle h3 {
+    font-size: 18px;
+  }
+  .ourwork_slid {
+    width: 100%;
+  }
+  .slid_title p {
+    margin-bottom: 15px;
+  }
+  .address {
+    display: block;
+  }
+  .location {
+    margin-top: 20px;
+  }
+  .address .social_media {
+    margin-top: 20px;
+  }
+}

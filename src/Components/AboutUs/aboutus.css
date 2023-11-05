@@ -1,0 +1,9 @@
+.aboutus{
+    @apply bg-[#fff] shadow-shadow
+}
+.aboutus_content{
+    @apply text-center 
+}
+.aboutus_content p{
+    @apply w-[800px] mx-auto my-[20px] text-font20 font-medium font-secondary_roboto
+}

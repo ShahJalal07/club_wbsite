@@ -1,0 +1,40 @@
+.smember{
+    @apply relative w-[24.5%] pt-[100px] pb-[20px] bg-primary-white px-[20px] shadow-lg mt-[150px]
+}
+.stitle{
+    @apply w-full text-center mx-auto  my-[10px]
+}
+.stitle h2{
+    @apply text-font30 font-bold font-secondary_roboto capitalize
+}
+.stitle h3{
+    @apply text-font20 font-bold font-secondary_roboto capitalize text-third-blue
+}
+.stitle p{
+    @apply text-font15 font-medium font-primary_poppins capitalize 
+}
+.sSocial {
+    @apply w-[200px] mx-auto mt-[20px] flex justify-center items-center text-center
+}
+
+.sSocial svg{
+    @apply text-font30 mx-[20px] duration-[0.3s] ease-in-out transition-all 
+}
+.sSocial svg:hover{
+    @apply text-frouth-red
+}
+.sSocial .facebook{
+    @apply text-secondary-light-blue
+}
+.sSocial .link_din{
+@apply text-[#0072b1]
+}
+.sSocial .instagram{
+    @apply text-[#cd3c6c]
+}
+.sMan{
+    @apply w-[200px] h-[200px] p-[10px] border-[2px] absolute left-[50%] translate-x-[-50%] translate-y-[-100%] border-third-blue box-border
+}
+.sMan img{
+    @apply w-full h-full object-cover
+}

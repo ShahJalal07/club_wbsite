@@ -1,0 +1,15 @@
+.sucess_box {
+    @apply w-[24%]  my-[10px] bg-primary-white text-center shadow-lg rounded-md border-[2px] border-fifth-purple;
+  }
+  .sucess_box img {
+    @apply w-[100%] h-[150px] mx-auto shadow-lg rounded-tl-md rounded-tr-md block;
+  }
+  .sucess_title {
+    @apply text-center my-[20px];
+  }
+  .sucess_title h1 {
+    @apply text-font30 font-secondary_roboto capitalize font-medium;
+  }
+  
+  
+  

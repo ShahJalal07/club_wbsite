@@ -1,0 +1,15 @@
+.ourwork_slid{
+    @apply w-[48%] p-[20px] bg-secondary-light-blue mt-[20px] rounded-lg
+}
+.ourwork_slid .react-slideshow-container button{
+    @apply hidden
+}
+.slid_title{
+    @apply text-center mt-[20px] 
+}
+.slid_title h2{
+    @apply text-font20 font-bold text-primary-white capitalize font-primary_poppins
+}
+.slid_title p{
+    @apply text-font15 text-black font-secondary_roboto capitalize font-medium
+}

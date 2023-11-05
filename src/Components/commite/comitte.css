@@ -1,0 +1,4 @@
+.comitte_member{
+    @apply flex justify-between gap-[5px] items-center flex-wrap 
+}
+

@@ -1,0 +1,6 @@
+.all_sucess{
+    @apply flex justify-between gap-[5px] flex-wrap items-center
+}
+.try{
+    @apply flex
+}

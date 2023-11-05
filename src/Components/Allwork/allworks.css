@@ -1,0 +1,3 @@
+.allWork{
+    @apply flex justify-between gap-[5px] flex-wrap
+}

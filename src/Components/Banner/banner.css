@@ -1,0 +1,13 @@
+/* .banner{
+    background-image: url("/SLSASC/public/banner.jpg");
+    padding: 100px ;
+    background-position: center;
+    background-repeat: no-repeat;
+
+} */
+.banner {
+  @apply bg-hero-pattern py-[227px] bg-cover bg-no-repeat bg-center;
+}
+
+/* lg device */
+
